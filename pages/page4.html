@@ -1,0 +1,55 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Personal Data</title>
+	<link href="../style.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+  label {
+		display: inline-block;
+		float: left;
+		clear: left;
+		width: 100px;
+		margin: 0px;
+		text-align: left;
+	}
+
+	input[type="text"] {
+		width: 250px;
+		margin: 5px 0px;
+	}
+
+	legend {
+		width: 70px;
+		padding: 2px;
+		margin-left: calc(50% - 35px - 8px);
+	}
+  	.sum {
+		background: #ff9900;
+		border: 1px solid #990000;
+		border-radius: 1000px;
+		box-shadow: 0 1px #444444;
+		padding: 20px 45px;
+		color: #4c1130;
+		display: inline-block;
+		font: normal bold 14px/1 "Open Sans", sans-serif;
+		text-align: center;
+	}
+</style>
+
+<body>
+	<fieldset>
+    <form action "http://webdevbasics.net/scripts/demo.php" method="post">
+		<label for="fname">First name:</label>
+	  <input type="text" id="fname" name="fname"><br><br>
+	  <label for="lname">Last name:</label>
+	  <input type="text" id="lname" name="lname"><br><br>
+    <label for="email"> Email: </label> 
+   <input type="email" id="email" name="email" required><br><br>
+    <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+    </form>
+	</fieldset> <br>
+
+   <input class="sum" type ="submit" value="submit"><br><br>
+<a href="../index.html"> Home </a>

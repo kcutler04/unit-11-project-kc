@@ -1,0 +1,113 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Survey</title>
+	<link href="../style.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+	div label {
+		display: inline-block;
+		float: left;
+		clear: left;
+		width: 100px;
+		margin: 0px;
+		text-align: left;
+	}
+
+	div input[type="text"] {
+		width: 250px;
+		margin: 5px 0px;
+	}
+
+	div legend {
+		width: 70px;
+		padding: 2px;
+		margin-left: calc(50% - 35px - 8px);
+	}
+
+	.sum {
+		background: #ff9900;
+		border: 1px solid #990000;
+		border-radius: 1000px;
+		box-shadow: 0 1px #444444;
+		padding: 20px 45px;
+		color: #4c1130;
+		display: inline-block;
+		font: normal bold 14px/1 "Open Sans", sans-serif;
+		text-align: center;
+	}
+</style>
+
+<body>
+	<form action="http://webdevbasics.net/scripts/demo.php" method="post">
+		<label for="user">user:</label>
+  <input type="text" id="user" name="user" maxlenght ="30"> <br><br>
+   </form>
+<form action="http://webdevbasics.net/scripts/demo.php" method="post">
+  <label for="pwd">password:</label>
+  <input type="password" id="pword" name="pword" minlength="8"><br><br>
+</form>
+
+
+  <form action="http://webdevbasics.net/scripts/demo.php" method="post"> Pick your favorite month <br>
+    <input type="radio" id="m1" name="month" value="Jan">
+    <label for="m1">Jan</label><br>
+    <input type="radio" id="m2" name="month" value="Feb">
+    <label for="m2">Feb</label><br>
+    <input type="radio" id="m3" name="month" value="Mar">
+    <label for="m3">Mar</label><br>
+    <input type="radio" id="m4" name="month" value="Apr">
+    <label for="m4">Apr</label><br>
+    <input type="radio" id="m5" name="month" value="May">
+    <label for="m5">May</label><br>
+    <input type="radio" id="m6" name="month" value="Jun">
+    <label for="m5">Jun</label><br>
+    <input type="radio" id="m7" name="month" value="Jul">
+    <label for="m7">Jul</label><br>
+    <input type="radio" id="m8" name="month" value="Aug">
+    <label for="m8">Aug</label><br>
+    <input type="radio" id="m9" name="month" value="Sep">
+    <label for="m9">Sep</label><br>
+    <input type="radio" id="m9" name="month" value="Oct">
+    <label for="m9">Oct</label><br>
+    <input type="radio" id="m10" name="month" value="Nov">
+    <label for="m10">Nov</label><br>
+    <input type="radio" id="m11" name="month" value="Dec">
+    <label for="m11">Dec</label><br>
+  </form>
+  <form action="http://webdevbasics.net/scripts/demo.php" method="post"> Favorite Social Nework<br>
+  <select name="" id="" size="5" multiple>
+      <option> Facebook</option>
+      <option> Instagram</option>
+      <option> Twitter</option>
+      <option> TikTok</option>  
+      <option> YouTube</option>
+  </select>
+  </form>
+<div>
+<form action "http://webdevbasics.net/scripts/demo.php" method="post"> 
+ <fieldset>
+   <legend>Shipping Address: </legend> 
+   <label for="address1">Address line 1:</label>
+    <input type="text" id="adress1" name="address1"><br><br>
+   <label for="address2">Address line 2:</label>
+    <input type="text" id="adress2" name="address2"><br><br>
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city"> <br><br> 
+    <label for="state">State:</label>
+    <input type="text" id="state" name="state"> <br> <br>
+        <label for="zip">Zip:</label>
+    <input type="number" id="zip" name="zip"> <br> <br>
+ </fieldset>
+</form>
+</div>
+
+
+
+
+<input class="sum" type ="submit" value="submit"><br><br>
+<input type="hidden" id="userid" name="userid">
+
+
+<a href="../index.html"> Home </a>
+</body>
